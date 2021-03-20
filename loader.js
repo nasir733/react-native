@@ -1,10 +1,11 @@
-import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import React, { useState, useEffect } from "react";
+import { Platform, Text, View, StyleSheet } from "react-native";
+import * as Location from "expo-location";
 
-export default function Loading({ location }) {
+export default function Loading() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Getting the fucking weather of {location}</Text>
+      <Text style={styles.text}>Getting the nice weather </Text>
     </View>
   );
 }
@@ -18,7 +19,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#FDF6AA",
   },
   text: {
-    color: "#2c2c2c",
+    color: "#242222",
     fontSize: 30,
   },
 });
